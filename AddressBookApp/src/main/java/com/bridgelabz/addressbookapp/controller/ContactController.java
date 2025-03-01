@@ -63,7 +63,7 @@ public class ContactController {
                 })
                 .orElse(ResponseEntity.notFound().build());
     }
-    //UC3 functionality using DTO
+
     private ContactDTO convertToDTO(Contact contact) {
         return new ContactDTO(contact.getName(), contact.getEmail(), contact.getPhone());
     }
